@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:pilot_quiz/firebase_options.dart';
 import 'package:pilot_quiz/helpers/notification_helper.dart';
-import 'package:pilot_quiz/pages/another_page.dart';
 import 'package:pilot_quiz/pages/auth_page.dart';
 import 'package:pilot_quiz/pages/flash_card_noti.dart';
 import 'package:pilot_quiz/pages/quiz_noti.dart';

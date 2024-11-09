@@ -1,11 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:pilot_quiz/flash_card/reusable_card.dart';
 import 'package:pilot_quiz/helpers/fetch_question.dart';
-import 'package:pilot_quiz/helpers/notification_helper.dart';
 import 'package:pilot_quiz/models/quiz_model.dart';
 
 class FlashCardNoti extends StatefulWidget {
@@ -16,8 +14,6 @@ class FlashCardNoti extends StatefulWidget {
 }
 
 class _FlashCardNotiState extends State<FlashCardNoti> {
-  static final FlutterLocalNotificationsPlugin
-      _flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
   GlobalKey<FlipCardState> cardKey = GlobalKey<FlipCardState>();
   FetchQuestions fetchQuestionsInstance = FetchQuestions();
   List<Question> _questions = [];
@@ -29,33 +25,6 @@ class _FlashCardNotiState extends State<FlashCardNoti> {
   void initState() {
     super.initState();
     fetchQuestions();
-    //checkAppLaunch();
-    //listenToNotifications();
-  }
-
-  listenToNotifications() {
-    print("Listening to notification");
-
-    LocalNotifications.onClickNotification.stream.listen((event) {
-      print(event);
-      Navigator.pushNamed(context, '/flash_card_noti', arguments: event);
-      LocalNotifications.showScheduleNotification(
-          title: "title", body: event, payload: event, timeDuration: 5);
-    });
-  }
-
-  Future checkAppLaunch() async {
-    final NotificationAppLaunchDetails? notificationAppLaunchDetails =
-        await _flutterLocalNotificationsPlugin
-            .getNotificationAppLaunchDetails();
-    if (notificationAppLaunchDetails!.didNotificationLaunchApp) {
-      LocalNotifications.showScheduleNotification(
-          title: "title",
-          body: "checkAppLaunch",
-          payload: "payload",
-          timeDuration: 5);
-      listenToNotifications();
-    }
   }
 
   Future<void> fetchQuestions() async {
