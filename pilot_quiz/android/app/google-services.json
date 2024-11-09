@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "168999506599",
+    "project_id": "skyquiz-60d28",
+    "storage_bucket": "skyquiz-60d28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168999506599:android:ac769e7fd2f96404458182",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX3_7DM3kOHAMcSIpag-FKU0d81zg2rqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168999506599:android:bda3d4e5b1732a35458182",
+        "android_client_info": {
+          "package_name": "com.example.notam_contraction"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX3_7DM3kOHAMcSIpag-FKU0d81zg2rqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168999506599:android:06aa6f6d1eef4357458182",
+        "android_client_info": {
+          "package_name": "com.example.pilot_quiz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX3_7DM3kOHAMcSIpag-FKU0d81zg2rqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168999506599:android:008a4b1e0ff136e6458182",
+        "android_client_info": {
+          "package_name": "com.example.sky_quiz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX3_7DM3kOHAMcSIpag-FKU0d81zg2rqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168999506599:android:79ee235b359ce992458182",
+        "android_client_info": {
+          "package_name": "com.example.test_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX3_7DM3kOHAMcSIpag-FKU0d81zg2rqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
